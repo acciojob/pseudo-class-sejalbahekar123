@@ -1,17 +1,23 @@
 #container {
-  margin: 20px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #000;
 }
 
+/* Content BEFORE the container */
 #container::before {
-  content: "Before Content";
-  color: #f00;
-  font-size: 20px;
-  display: block;
+    content: "Text Before Container";
+    color: #f00;
+    font-size: 20px;
+    display: block;
+    margin-bottom: 10px;
 }
 
+/* Content AFTER the container */
 #container::after {
-  content: "After Content";
-  color: #f00;
-  font-size: 20px;
-  display: block;
+    content: "Text After Container";
+    color: #f00;
+    font-size: 20px;
+    display: block;
+    margin-top: 10px;
 }
